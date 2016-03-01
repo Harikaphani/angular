@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="moduleApp" ng-controller="myCtrl">
+<head lang="en">
+<meta charset="UTF-8">
+<title>Angularjs world</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="lib1/angular.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="controller/registercntrl.js"></script>
+</head>
+<body>
+<div class="container">
+ <div class="form-horizontal">
+        <div class="form-group">
+            <label for="firstname">First Name:</label>
+          
+  <input type="text"  class="form-control" id="inputFirstname" placeholder="FirstName" ng-model="aka.FirstName">
+          
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label>
+          
+<input type="text" class="form-control" id="inputLastName" placeholder="LastName" ng-model="aka.LastName">
+        </div>
+        
+        <div class="form-group">
+            
+                <button type="button" class="btn btn-primary" ng-click="registeruser()">Register</button>
+          
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

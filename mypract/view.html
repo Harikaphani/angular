@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>undersatnding angular</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="lib/angular.min.js"></script>
+</head>
+
+<body ng-app="twitterApp">
+     <div ng-controller="myCtrl">
+         <br>
+         <form class="form-horizontal" ng-controller="myCtrl">
+             <div class="form-group">
+                 <label for="name" class="control-label col-xs-2">first name</label>
+                 <div class="col-xs-10">
+                     <input type="name" class="form-control" id="name" placeholder="firstname"
+                        ng-model="register.firstname">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <label for="name" class="control-label col-xs-2">last name</label>
+                 <div class="col-xs-10">
+                     <input type="lastname" class="form-control" id="name" placeholder="lastname"
+                 ng-model = "register.lastname">
+                 </div>
+             </div>
+             <div class="form-group">
+                 <div class="col-xs-offset-2 col-xs-10">
+                     <div class="checkbox">
+                         <label><input type="checkbox"> Remember me</label>
+                     </div>
+                 </div>
+             </div>
+             <div class="form-group">
+                 <div class="col-xs-offset-2 col-xs-10">
+                     <button class="btn btn-primary"
+                          ng-click="registerUser()">register</button>
+                 </div>
+             </div>
+         </form>
+     </div>
+     <script src="app/app.js"></script>
+     <script src="cntrl/cntrl.js"></script>
+</body>
+</html>
